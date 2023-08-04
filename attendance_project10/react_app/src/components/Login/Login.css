@@ -1,0 +1,45 @@
+.loginpg {
+    position: absolute;
+    margin: 0;
+    width: 60%;
+    height: 100vh;
+    float: left;
+    background-image: url("../../assests/images/ShiftingBGGradient.png");
+    background-size: cover;
+}
+
+.loginForm {
+    margin: 0px;
+    width: 40%;
+    float: right;
+    height: 100vh;
+    background: #F2F3F5;
+}
+
+.logo1 {
+    width: 30%;
+    margin-top: 250px;
+    align-content: center;
+    height: 50px;
+}
+
+.tabs {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 51x;
+    color: #202124;
+}
+
+.signInForm {
+   display: grid;
+   place-items: center;
+   margin: 20px 0 0 0;
+}
+
+#signInBtn {
+    margin-top: 49px;
+    border: none;
+    padding: 0px;
+}

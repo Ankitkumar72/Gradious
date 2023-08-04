@@ -1,0 +1,14 @@
+.loadingDiv {
+    top: 50%;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.loadingPng {
+    height: 50px;
+}

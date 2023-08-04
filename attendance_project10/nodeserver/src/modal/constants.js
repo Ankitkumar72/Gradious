@@ -1,0 +1,72 @@
+const LIB_TYPES = {
+    CONTENT:1,
+    MCQ:2,
+    DESCRIPTIVE:3,
+    ASSIGNMENT:4,
+    CC:5,
+    SAQ:6,
+    LAQ:7,
+    MCQ_SINGLE:8,
+    MCQ_MULTI:9,
+  }
+  
+  const PROGRESS_STATUS = {
+    LOCKED:0,
+    UNLOCKED:1,
+    EVALUATED:2,
+    REATTEMPT:3,
+    TO_BE_EVALUATED:4,
+  }
+  
+  const QUESTION_STATUS = {
+    ASSIGNED:1,
+    SUBMITTED:2,
+    RESUBMIT:3,
+    CANCELLED:4,
+    TO_BE_EVALUATED:5,
+  }
+  
+  const RESULT_STATUS = {
+    SUCCESS:1000,
+    TECHNICAL_ERROR:2050,
+    FAILURE_ATTEMPT:2000,
+    REPLACE_QUESTION:2001,
+    INCORRECT_ANSWER:2002,
+    NO_DATA:2003,
+    TESTCASES_FAILED:2004,
+  }
+  
+  const LAMBDA_ENV = {
+    DEV:"DEV",
+    PROD:"PROD",
+    QA:"AWS_DEV"
+  }
+  
+  const QUESTION={
+    ACTIVE:1,
+    INACTIVE:0,
+  }
+  
+  const QUESTION_DELETE={
+    YES:1,
+    NO:0,
+  }
+  
+  const LANGUAGES={
+    JAVA:1,
+    JAVASCRIPT:2,
+    C:3,
+    CPP:4,
+    PYTHON:5,
+  }
+  
+  module.exports = {
+    QUESTION_STATUS,
+    PROGRESS_STATUS,
+    RESULT_STATUS,
+    LAMBDA_ENV,
+    QUESTION,
+    QUESTION_DELETE,
+    LIB_TYPES,
+    LANGUAGES
+  };

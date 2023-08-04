@@ -1,0 +1,333 @@
+.adminBatchCard-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    padding-top: 60px;
+}
+
+#addBatchContainer {
+    width: 50%;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+    margin: 5px 0;
+}
+
+.addBatchTitleSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addBatchTitle {
+    height: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin: 10px 20px;
+}
+
+.addBatchCloseIcon {
+    margin: 13px;
+    color: #202124;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.addBatchHrLine {
+    height: 0px;
+    border: 1px solid #E4E5E7;
+    margin: 0;
+}
+
+/* .form {
+    width: 93%;
+    margin: 20px 22px;
+} */
+
+.form{
+    padding: 0;
+    margin: 0;
+}
+
+#adminbatchDetailsForm {
+    height: 82vh !important;
+    width: 100%;
+    overflow: auto;
+}
+
+#batchNameLabel,
+#batchStartDateLabel,
+#batchEndDateLabel,
+#learningPathLabel,
+#addUserNameLabel,
+#batchUploadThumbnailLabel {
+    height: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #202124;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: 20px;
+    width: 90%;
+}
+
+
+#batchDesLabel {
+    height: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #202124;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+#batchUploadThumbnailDetail{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #202124;
+    justify-content: space-between;
+    margin:0;
+}
+
+#addBatchContainer .react-datepicker-wrapper{
+    width: 100%;
+}
+
+#learningPathSelect{
+    z-index: 4;
+    width: 90%;
+    margin-left: 20px;
+}
+
+#addBatchContainer .react-datepicker-popper{
+    z-index: 5;
+}
+
+#addBatchContainer .tox.tox-tinymce{
+    width: 90% !important;
+    margin:0 0 0 20px ;
+}
+
+#batchNameInBatch,
+.batchStartDate,
+#batchEndDate,
+#batchUploadThumbnail,
+#uploadUser {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 0px 7px 10px;
+    gap: 10px;
+    height: 32px;
+    width: 90%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #BDC1C6;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0 0 0 20px;
+}
+
+#batchDesInBatch {
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 0px 7px 10px;
+    gap: 10px;
+    height: 95px;
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #BDC1C6;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0 0 0 20px;
+    width: 90%;
+}
+
+#batchNameInBatch::placeholder,
+#batchDesInBatch::placeholder,
+.batchStartDate::placeholder,
+#batchEndDate::placeholder {
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #BDC1C6;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+.addBatchBtn {
+    position: fixed;
+    top: 60px;
+    z-index: 2;
+    width: 100%;
+}
+
+#addBatch {
+    float: right;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    width: 143px;
+    height: 34px;
+    background: #0D6EFD;
+    border-radius: 4px;
+}
+
+
+#adminBatchCard {
+    width: 310px;
+    min-height: 300px;
+    background: #202124;
+    border-radius: 10px;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+#adminBatchImg {
+    width: 268px;
+    height: 170px;
+    border-radius: 8px;
+    margin: 20px 0 5px 14px;
+}
+
+.adminBatchName {
+    /* height: 24px; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.adminBatchStartDate {
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #BDC1C6;
+    margin-top: 3px;
+}
+
+#adminBatchDes {
+    height: 45px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 5px;
+    mix-blend-mode: normal;
+}
+
+
+.uploadUser {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    font-style: normal;
+    font-family: 'Inter';
+}
+
+.adminAddBatchDetailsBtn{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    column-gap:10px ;
+    border-top:1px solid #E4E5E7;
+    padding: 10px 0 0 0 ;
+}
+
+#saveBatchBtn {
+    color: #FFFFFF;
+    border: none;
+    background: #F55533;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 7px 20px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    font-family: 'Inter';
+    margin: 0px 0 0 20px;
+}
+
+#cancelBatchBtn {
+    padding: 7px 20px;
+    width: 86px;
+    height: 34px;
+    background: #FFFFFF;
+    color: #202124;
+    border: 1px solid #BDC1C6;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* margin-left: 10px;
+    margin-top: 10px; */
+}
+
+
+.line {
+    margin: 2px 0 10px;
+}
+

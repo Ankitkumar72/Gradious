@@ -1,0 +1,976 @@
+.usersHead,
+.bdUserHeadSec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.usersHead {
+    margin-top: 5%;
+}
+
+.bdUserHead {
+    height: 27px;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 700;
+    line-height: 27px;
+    font-style: normal;
+    font-family: 'Inter';
+    margin: 5px 0 28px 20px;
+}
+
+.bdUserFilterText {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 20px;
+    font-style: normal;
+    font-family: 'Inter';
+    margin-top: 8px;
+}
+
+.bdUserFilter {
+    margin-left: 10px;
+}
+
+
+.upload-btn-wrapper {
+    position: relative;
+    /* overflow: hidden; */
+    /* display: inline-block; */
+}
+
+.upload-btn-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.bdUserUploadIconBtn {
+    width: 37px;
+    height: 34px;
+    border: none;
+    border-radius: 4px;
+    background: #E4E5E7;
+    margin: 0 -5px 25px 0;
+}
+
+#bdUserUploadIcon {
+    width: 12px;
+    height: 12px;
+    color: #26344A
+}
+
+.bdUserSearchBox {
+    gap: 10px;
+    width: 234px;
+    height: 34px;
+    border: none;
+    outline: none;
+    /* margin: 0 15px; */
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 9px 25px 9px 8px;
+    border: 1px solid #E4E5E7;
+}
+
+.bdUserSearchIcon {
+    top: -2px;
+    right: 20px;
+    width: 12.44px;
+    height: 12.44px;
+    color: #BDC1C6;
+    position: relative;
+}
+
+.addUserBtn {
+    display: inline-block;
+    width: 160px;
+}
+
+#bdAddUserBtn {
+    height: 34px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 7px 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    font-style: normal;
+    font-family: 'Inter';
+    background: #0D6EFD;
+    margin: -5px 26px 0 -20px;
+}
+
+.bdUsersTable{
+    padding:0 20px;
+}
+
+.bdUserReportTable {
+    padding: 0;
+    width: 95%;
+    margin: 0 20px;
+}
+
+.bdUserReportTable .bdUserReportTableHead {
+    height: 40px;
+}
+
+.bdUserReportTableRowHead {
+    box-shadow: inset 0px -1px 0px #e4e5e7
+}
+
+.bdUserTableHead {
+    height: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9AA0A6;
+    line-height: 15px;
+    font-style: normal;
+    font-family: 'Inter';
+    text-transform: uppercase;
+    box-shadow: inset 0px -1px 0px #E4E5E7;
+}
+
+.bdUserReportTBodyRow {
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #E4E5E7;
+}
+
+.bdUserReportTBodyRow td {
+    font-size: 14px;
+    font-weight: 400;
+    color: #202124;
+    line-height: 20px;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Inter';
+}
+
+.bdUserPendingCount,
+.bdUserMarks {
+    margin: 10px 0 0 0;
+}
+
+.bdUserPendingCount {
+    cursor: pointer;
+}
+
+#bdUserProgressBar {
+    height: 10px;
+    width: 127px;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    background: #E4E5E7;
+}
+
+ #bdUserProgressBar .progress-bar {
+    font-style: normal;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-weight: 500;
+    position: relative;
+    bottom: 3px;
+}
+
+.bdUserProgressBarLabel {
+    left: 80px;
+    width: 22px;
+    height: 12px;
+    bottom: 11px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 12px;
+    position: relative;
+    font-style: normal;
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+.bdViewUserDetails {
+    height: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: #3C88F9;
+    line-height: 15px;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Inter';
+}
+
+.bdViewUserDetails:hover {
+    text-decoration: underline;
+}
+
+.bdUserProgressSec {
+    width: 50%;
+    text-align: left;
+}
+
+.bdUserPendingName,
+.bdUserSubmittedName {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #202124;
+    line-height: 15px;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Inter';
+}
+
+.bdUserPendingName:hover,
+.bdUserSubmittedName:hover {
+    text-decoration: underline;
+    color: #3C88F9;
+    transition: color 0.5s ease;
+}
+
+.bdUserPendingDuedate {
+    font-size: 14px;
+    font-weight: 500;
+    color: #202124;
+    line-height: 15px;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Inter';
+}
+
+.bdUserEvaluated,
+.bdUserYetToEvaluate {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    border-radius: 4px;
+    padding: 3px 5px;
+    font-style: normal;
+    font-family: 'Inter';
+    background: #EBF5EC;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.bdUserEvaluated {
+    color: #87BA8C;
+}
+
+.bdUserYetToEvaluate {
+    color: #B66969;
+}
+
+.userBatch,
+.userLearningPath {
+    width: 253px;
+    height: 38px;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: normal;
+    font-family: 'Inter';
+}
+
+.userLearningPath {
+    width: 500px;
+}
+
+.userBatchLabel,
+.userLearningPathLabel {
+    width: 100px;
+    height: 27px;
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 27px;
+    font-style: normal;
+    font-family: 'Inter';
+}
+
+.userLearningPathLabel {
+    width: 180px;
+    margin-top: 1.2%;
+}
+
+.addUserTitleSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .proctoringTitleSection {
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+} */
+
+.addUserTitle {
+    height: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin: 20px;
+}
+
+.addUserCloseIcon {
+    margin: 25px 27px 26px 0;
+    color: #202124;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* .proctoringCloseIcon{
+    margin:  5px 10px 5px 0;
+    color: #202124;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+} */
+
+.userDetails {
+    height: 450px;
+    overflow: auto;
+}
+
+/* .proctoringDetails{
+    height: 150px;
+    margin: 20px 0 0 0;
+} */
+
+
+#userFirstname,
+#userLastname,
+#userRole,
+#userEmail,
+#roleOption,
+#userPhone {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 0px 7px 10px;
+    gap: 10px;
+    height: 32px;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #BDC1C6;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0;
+}
+
+
+/* .selectRole{
+    height: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #BDC1C6;
+    border-radius: 4px;
+    border: none;
+}
+.css-1s2u09g-control{
+ height: 32px !important;
+} */
+
+#addUserContainer {
+    width: 40%;
+    height: 645px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+    margin: 5px 0;
+}
+
+/* #proctoringDetailContainer{
+    width: 65%;
+    height: 560px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+    margin: 50px 50px;
+} */
+
+.addUserHrLine {
+    height: 0px;
+    border: 1px solid #E4E5E7;
+    margin: 0;
+}
+
+#userFirstNameLabel,
+#userLastNameLabel,
+#userRoleLabel,
+#roleLabel,
+#userEmailLabel,
+#userPhoneLabel {
+    height: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #202124;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.matched {
+    height: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: #202124;
+}
+
+.unmatched {
+    height: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: #202124;
+    margin: 20px 0 0 0;
+}
+
+.addUserform {
+    width: 90%;
+    margin: 22px 25px;
+}
+
+/* .proctoringForm{
+    width: 90%;
+    margin: 22px 25px; 
+} */
+
+.userImage {
+    float: right;
+}
+
+.proctoringFacedetected {
+    /* border:3px solid tomato; */
+    /* border:3px solid #F55533; */
+    border: 3px solid rgb(224, 248, 6);
+
+}
+
+.multifacedetected {
+    border: 3px solid tomato;
+    ;
+}
+
+.ProctoringImagesContainer {
+    height: 160px;
+    margin: 5px 0 0 0;
+    width: 100%;
+    overflow: scroll;
+}
+
+/* .proctoringImgDiv{
+    height: 140px;
+    display: table-cell;
+}
+.proctoringImgDiv>img{
+    height: 100px;
+    width: 100px;
+    font-size: 25px;
+    background: blue;
+    margin: 0 0 0 20px;
+    display: inline-block;
+    line-height: 100px;
+    box-shadow: 0 0 0 3px #fff inset;
+    cursor: pointer;
+} */
+
+/* .proctoringTimeStamp{
+    margin: 0;
+    height: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    align-items: center;
+    color: #202124;
+    height: 20px;
+    width: 130px;
+    margin: 0 0 0 5px;
+} */
+
+.proctoringMultiFaceNotDetected {
+    display: none;
+}
+
+.proctoringMultiFaceDetected {
+    display: block;
+    color: tomato;
+    margin: 0 0 5px 60px;
+}
+
+.bdUserDisableAllSwitchSec {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin: 0 15px 0 0 ;
+}
+
+#bdUserCustomSwitch {
+    width: 40px;
+    height: 20px !important;
+    margin: 0;
+}
+
+#bdUserDisableAllSwitch {
+    margin-top: 10px;
+}
+
+/* Batch details */
+.bdBatchDetailSec {
+    padding-top: 50px;
+}
+
+.bdslashbatch{
+    font-family: 'Inter';
+    font-style: normal;   
+    color: #0D6EFD;
+    cursor: pointer;
+}
+
+.bdslashbatch:hover{
+    text-decoration:underline;
+}
+
+.bdBatchName {
+    height: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    text-align: left;
+    margin: 0 0 10px 20px;
+}
+
+.bdNavBarSec{
+    height: 49px;
+    background: #F2F4F7;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.bdNavBar {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bdNav {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.bdNavLink {
+    color: #373739;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none !important;
+}
+
+.bdNavP{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+
+.bdNavLink:hover {
+    color: #F55533 ;
+    height: 20px;
+    transition: color 0.5s ease;
+    text-decoration: none!important;
+}
+
+
+.bdNavactive {
+    color: #F55533 !important;
+    /* border-bottom: 2px solid #F55533; */
+}
+
+
+.bdCourseLink {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #202124;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+.bdCourseLink:hover {
+    color: #202124;
+    background: #EFF0F1;
+}
+
+.bdCourseLink:focus{
+    outline: none;
+}
+
+
+.bdHrLine {
+    padding: 0;
+    margin: 12px 20px 10px;
+}
+
+/* Details */
+
+.bdBatchDetails {
+    /* min-height: 222px; */
+    margin: 0 20px;
+    background: #F2F3F5;
+    box-shadow: inset 0px -1px 0px #E4E5E7;
+    border-radius: 4px;
+    padding-bottom: 20px;
+}
+
+.bdInBatchName {
+    /* width: 83px; */
+    height: 14px;
+    padding: 29px 0px 15px 21px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.bdInBatchDes {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #202124;
+    mix-blend-mode: normal;
+    text-align: left;
+    margin: 0 20px;
+}
+
+.bdInBatchDetHead {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.bdInBatchDetails,
+.bdCourseDetails {
+    display: flex;
+    margin-bottom: -4px;
+    flex-direction: row;
+}
+
+.bdInBatchStartDateHead{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 8px 0 5px 20px;
+}
+.bdInBatchStartDate{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 8px 0 5px 5px;
+}
+
+.bdModuleName {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #202124;
+}
+
+.bdTopicName {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #202124;
+    margin-left: 5px;
+}
+
+.bdBatchThumbnailSec {
+    /* height: 246px; */
+    background: #F2F3F5;
+    box-shadow: inset 0px -1px 0px #E4E5E7;
+    border-radius: 4px;
+    margin: 8px 20px 0px;
+    padding-bottom: 3px;
+}
+
+.bdBatchThumbnailHead {
+    height: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding: 20px;
+}
+
+.bdBatchThumbnailDetail {
+    display: flex;
+    margin: 0 20px 20px 20px;
+}
+
+.bdBatchThumbnail {
+    box-sizing: border-box;
+    width: 280px;
+    height: 185px;
+    background: #FFFFFF;
+    border: 1px solid #C5C8CD;
+}
+
+.bdChangeThumbnailBtn {
+    padding: 7px 20px;
+    height: 34px;
+    background: #0D6EFD;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    align-self: flex-end;
+    flex-grow: 0;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.bdRemoveThumbnailBtn {
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #F66A4D;
+    margin: 26px 0 0 26px;
+    cursor: pointer;
+}
+
+.bdCourseName {
+    height: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    /* padding: 24px 0 21px 0; */
+    margin: 10px 0 10px 20px;
+}
+
+.bdCourseDetails {
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #E4E5E7;
+    margin-bottom: 10px;
+    width: 55%;
+    margin-left: 20px;
+}
+
+.bdCourseNameInput {
+    box-sizing: border-box;
+    width: 246px;
+    height: 34px;
+    background: #FFFFFF;
+    border: 1px solid #BDC1C6;
+    border-radius: 4px;
+    margin: 3px 192px 0 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+.bdCourseNameInput::placeholder {
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #BDC1C6;
+    padding-left: 5px;
+}
+
+.bdCheckIcon {
+    width: 15px;
+    margin: 10px;
+    color: #04B462;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 11px;
+    padding: 2px;
+}
+
+.bdCheckIcon:hover {
+    color: #05b160;
+    transition: color 0.5s ease;
+}
+
+.bdXmarkIcon {
+    width: 15px;
+    margin: 10px 0 10px 0;
+    color: #F55533;
+    cursor: pointer;
+}
+
+.bdXmarkIcon:hover {
+    color: #fc3b10;
+    transition: color 0.5s ease;
+}
+
+/* Courses */
+
+.bdCourseHeadSec {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.bdCoursesInCourseName {
+    height: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 5px 0 10px 20px;
+}
+#bdCoursesInCourseSelectSec{
+    margin: 0 0 10px 20px;
+}
+
+#bdCoursesInCourseSelect{
+   width: 200px;
+   font-family: 'Inter';
+}
+#bdCourseInCourse{
+    font-family: 'Inter';
+}
+
+#bdCourseaddLP {
+    padding: 7px 20px;
+    height: 34px;
+    background: #0D6EFD;
+    border-radius: 4px;
+    margin-right: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.bdUserHeadSecIn{
+    width: 205px;
+    float: right;
+    margin-left: auto;
+    position: relative;
+    bottom: 55px;
+}
+
+#count,#nameCount{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 0 0 250px;
+}
